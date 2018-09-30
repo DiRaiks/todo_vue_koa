@@ -31,7 +31,7 @@ const config = {
                 exclude: /(node_modules|bower_components)/,
                 use: [{
                     loader: 'babel-loader',
-                    options: { presets: ['es2015']}
+                    // options: { presets: ['es2015']}
                 }]
             },
             {
