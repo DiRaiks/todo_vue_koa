@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/DiRaiks/todo_vue_koa.git",
-  "author": "Andrew <t.fane@mail.ru>",
+  "author": "DiRaiks <t.fane@mail.ru>",
   "license": "MIT",
   "dependencies": {
     "vue": "^2.5.17",
