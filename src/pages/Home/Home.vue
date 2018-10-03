@@ -1,17 +1,21 @@
 <template>
-    <div>
+    <div class="home">
         <div class="">
             Home
         </div>
-        <OneCollum/>
+        <div class="collumWr">
+            <OneCollum/>
+            <TwoCollum/>
+        </div>
     </div>
 </template>
 
 <script>
     import OneCollum from './OneCollum.vue'
+    import TwoCollum from './TwoCollum.vue'
 
     export default {
-        components: { OneCollum },
+        components: { OneCollum, TwoCollum },
         data() {
             return {
 
@@ -23,3 +27,5 @@
     }
 
 </script>
+
+<style src="./home.scss" scoped></style>

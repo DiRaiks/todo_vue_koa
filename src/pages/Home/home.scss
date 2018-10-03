@@ -1,0 +1,28 @@
+.home {
+  height: 100%;
+}
+
+.collumWr {
+  display: flex;
+  //flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.oneCollum {
+  flex-grow: 1;
+  background: aqua;
+
+  .itemsWr {
+    margin: 20px;
+
+    .item {
+      padding: 15px;
+      background: blue;
+    }
+  }
+}
+.twoCollum {
+  flex-grow: 1;
+  background: yellow;
+}
