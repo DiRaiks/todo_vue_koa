@@ -3,7 +3,12 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 
-// Vue.component('custom-input', CustomInput);
+import CustomInput from './components/customInput.vue';
+import baseButton from './components/baseButton.vue';
+
+
+Vue.component('custom-input', CustomInput);
+Vue.component('base-button', baseButton);
 
 new Vue({
     router,

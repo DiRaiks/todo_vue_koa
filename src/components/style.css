@@ -1,0 +1,42 @@
+.baseButton {
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 0;
+    padding: 15px 30px;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    background: deepskyblue;
+    color: white;
+    transition: background-color 0.1s;
+}
+
+.baseButton:hover {
+    background: color($mainEm shade(10%));
+}
+
+.baseButton:hover {
+    background: color($dark alpha(50%));
+    border-color: color($dark alpha(50%));
+}
+
+.baseButton .button-secondary {
+    background: color($ nav alpha(20%));
+    color: cornflowerblue;
+}
+
+.baseButton .button-secondary:hover {
+    background: color($nav alpha(35%));
+}
+
+.baseButton:disabled,
+.buttonDisabled {
+    background: color($nav alpha(10%));
+}
+
+.baseButton .buttonSmall {
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-weight: 400;
+}
