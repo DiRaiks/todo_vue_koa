@@ -3,22 +3,22 @@
         <div class="">
             Home
         </div>
-        <custom-input value="" type="text" label="Text" @input="inputHandler"/>
+        <OneCollum/>
     </div>
 </template>
 
 <script>
+    import OneCollum from './OneCollum.vue'
+
     export default {
+        components: { OneCollum },
         data() {
             return {
-                itemName: null,
+
             }
         },
         methods: {
-            inputHandler(text) {
-                console.log(text)
-                this.itemName = text
-            }
+
         }
     }
 

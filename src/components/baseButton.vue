@@ -18,7 +18,6 @@
                 const { isSmall, isPending, disabled, viewType } = this
 
                 return {
-                    defaultBtn: true,
                     baseButton: true,
                     buttonSmall: isSmall,
                     buttonPending: isPending,
@@ -39,4 +38,4 @@
     }
 </script>
 
-<style src="./style.css" scoped></style>
+<style src="./style.scss" scoped></style>

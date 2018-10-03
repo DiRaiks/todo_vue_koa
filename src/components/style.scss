@@ -13,29 +13,25 @@
 }
 
 .baseButton:hover {
-    background: color($mainEm shade(10%));
+    background: deepskyblue;
 }
 
 .baseButton:hover {
-    background: color($dark alpha(50%));
-    border-color: color($dark alpha(50%));
+    background: black;
+    border-color: black;
 }
 
 .baseButton .button-secondary {
-    background: color($ nav alpha(20%));
+    background: cornflowerblue;
     color: cornflowerblue;
-}
-
-.baseButton .button-secondary:hover {
-    background: color($nav alpha(35%));
 }
 
 .baseButton:disabled,
 .buttonDisabled {
-    background: color($nav alpha(10%));
+    background: grey;
 }
 
-.baseButton .buttonSmall {
+.baseButton, .buttonSmall {
     padding: 10px 25px;
     border-radius: 20px;
     font-weight: 400;
