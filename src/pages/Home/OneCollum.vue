@@ -12,16 +12,22 @@
 </template>
 
 <script>
+    import { mapGetters, mapActions }  from 'vuex'
     export default {
         data() {
             return {
                 itemName: null,
                 items: [],
-                dragEl: null,
-                toElement: null,
             }
         },
+        computed: {
+            ...mapGetters({ dragEl: 'getDragEl', toEl: 'getDragToEl' }),
+        },
         methods: {
+            ...mapActions({
+                setDragElement: 'setDragElement',
+                setDragToElement: 'setDragToElement',
+            }),
             inputHandler(text) {
                 this.itemName = text
             },
@@ -32,17 +38,15 @@
             },
             dragStart(ev) {
                 console.log(ev)
-                this.dragEl = ev.target.id
+                this.setDragElement(ev.target.id)
             },
             drop(ev) {
-                console.log('drop',ev)
                 ev.preventDefault();
-                const toElem = document.getElementById(this.toElement)
+                const toElem = document.getElementById(this.toEl)
                 toElem.appendChild(document.getElementById(this.dragEl));
             },
             dragOver(ev) {
-                console.log(ev)
-                this.toElement = ev.target.id
+                this.setDragToElement(ev.target.id)
             },
             dropInsert(ev) {
 
